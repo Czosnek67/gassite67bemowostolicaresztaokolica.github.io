@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gassy</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    h1, h3 {
+      color: rgb(164, 240, 41);
+      text-align: center;
+      margin-top: 0%;
+      font-family: sans-serif;
+      text-shadow: 2px 2px 5px black;
+    }
+  </style>
+</head>
+<body>
+  <video id="gassy" loop>
+    <source src="gassy.mp4" type="video/mp4">
+  </video>
+
+  <h1>A gassy website</h1>
+  <h3>This website needs a hero!</h3>
+
+  <script>
+    // Odtwarza z dźwiękiem po kliknięciu
+    document.body.addEventListener('click', () => {
+      document.getElementById('gassy').play();
+    });
+  </script>
+</body>
+</html>

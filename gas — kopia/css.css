@@ -1,0 +1,7 @@
+/* Minimal page styles - keep CSS organized here if you prefer external stylesheet */
+body {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	font-family: sans-serif;
+}

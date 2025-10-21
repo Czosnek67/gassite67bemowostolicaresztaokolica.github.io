@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gassy</title>
+  <style>
+    /* Allow the page to scroll. Avoid hiding overflow on root elements. */
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh; /* ensure at least full viewport height */
+      /* do not set overflow: hidden here — that prevents scrolling */
+      font-family: sans-serif;
+      color: #dfe8a0;
+    }
+
+    /* Background video stays fixed behind the content */
+    #gassy {
+      position: fixed;
+      inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      pointer-events: none; /* let clicks pass through to page content */
+    }
+
+    /* Content wrapper so text flows normally and can scroll */
+    .content {
+      position: relative;
+      padding: 20px;
+      background: rgba(0,0,0,0.25); /* slight backdrop to improve text readability */
+      box-sizing: border-box;
+    }
+
+    h1, h3, h2 {
+      color: rgb(203, 238, 47);
+      text-align: left;
+      margin: 10px 0;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    a {
+      color: rgb(155, 206, 68);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Film startuje automatycznie wyciszony -->
+  <video id="gassy" autoplay muted loop playsinline>
+    <source src="gassy.mp4" type="video/mp4">
+  </video>
+  <div class="content">
+    <h1>A gassy website</h1>
+    <h3>This website needs a hero!</h3>
+    <nav>
+      <h2><a href="index.html">Main Page</a></h2>
+      <h2><a href="gasvideos.html">The incredible gassy's apprentices</a></h2>
+    </nav>
+
+    <ul>
+      <li><h2>Welcome to the story of the incredible gassy, where you'll find out how our gassy hero became who he is today!</h2></li>
+    </ul>
+
+    <p>The Chronicles of Incredible Gassy<br>
+
+    In a world much like ours, but tinged with absurdity and heightened chaos, there existed a city known as Flatulentia.<br> It was a place where the streets hummed with the scent of adventure—and sometimes, other, more pungent aromas.<br> Here, the citizens were accustomed to strange phenomena: self-flying cows, rain that smelled like pickles, and occasionally, buildings that spontaneously… floated. But nothing in Flatulentia could prepare them for the arrival of one man, or rather, one legend: Incredible Gassy.
+
+    Origins of a Hero
+
+    Once, long ago, Incredible Gassy was simply Gordon Tootsworth, a mild-mannered, slightly pudgy scientist with a fascination for chemistry and culinary arts. He lived a quiet life, experimenting with spices and exotic beans, and dreaming of one day revolutionizing the world with his creations. But fate had other plans.
+
+    One fateful evening, Gordon was working in his laboratory, attempting to synthesize a new type of energy drink. The concoction involved a rare green bean imported from the mystical region of Bellyonia, known for its explosive gastrointestinal effects. As Gordon added the final ingredient—a drop of neon liquid labeled “Ethereal Enchilada Essence”—there was a blinding flash of light, a sound akin to a thousand whoopee cushions simultaneously erupting, and the world tilted on its axis.
+
+    When the smoke cleared, Gordon felt… different. His once ordinary digestive system had transformed into a superpower. He could harness the energy of gases, controlling them at will, shaping them into devastating attacks—or comically absurd tools. He became Incredible Gassy.
+
+    First Adventures
+
+    At first, Gordon struggled with his newfound abilities. A simple sneeze in public could launch a truck into the air. Walking down the street became an act of heroism, as he had to carefully calculate each step to avoid unintended destruction. But soon, he realized that his powers were more than a bizarre curse—they were a gift.
+
+    His first heroic act came during the infamous Cheesequake of Flatulentia. The city was being threatened by a gang of mutant rats, led by the terrifying Brie Baron, who had discovered a way to weaponize cheese into living constructs. The mayor, desperate and slightly nauseated, called for help.
+
+    Incredible Gassy arrived in a blur of lime-green spandex, his cape fluttering dramatically. He unleashed his signature move, the Brap Bomb, a concentrated shockwave of energy capable of neutralizing cheese constructs in seconds. The rats were scattered, the city saved, and Gordon finally embraced his destiny.
+
+    Allies and Enemies
+
+    Over time, Incredible Gassy built a roster of allies, including:
+
+    Sir Burpsalot, a talking cat whose burps could shatter glass.
+
+    Windy Wanda, a pilot who specialized in airships powered entirely by controlled flatulence (a nod to her mentor, Gassy).
+
+    Professor Tush, a rival scientist-turned-friend who helped Gassy understand the full potential of his powers.
+
+    But with great power came great stink… er, I mean, responsibility. He also attracted formidable enemies:
+
+    The Silent Stinker, a ninja villain who could release invisible clouds that disoriented entire armies.
+
+    Count Gaspacho, a cunning aristocrat whose aristocratic farts carried hallucinogenic properties.
+
+    The Flatulent Faction, a secret society determined to harness Gassy’s powers for global domination.
+
+    The Great Gas Wars
+
+    The climax of Gassy’s story begins with the Great Gas Wars, an epic conflict spanning continents. The Silent Stinker and Count Gaspacho united their forces, attempting to overthrow the governments of the world with clouds of mind-altering gas. Flatulentia became the epicenter of chaos.
+
+    Incredible Gassy, alongside his allies, launched an audacious counteroffensive. Using a combination of Toot Tornadoes, SBD Sneak Attacks, and strategically-timed culinary creations, they fought battles in the streets, forests, and even in zero-gravity space stations orbiting the Earth.
+
+    During the pivotal battle over Mount Methane, Gassy discovered the true extent of his powers. He could manipulate atmospheric pressure and gaseous density on a massive scale. With a final, cataclysmic move—the Ultimate Fartquake—he neutralized the enemies’ powers and saved the world from total olfactory obliteration.
+
+    Legacy of Incredible Gassy
+
+    After the wars, Gassy became a global hero. Statues of him, lime-green and slightly wobbly, were erected in major cities. Scientists studied his physiology, comedians wrote entire shows about his exploits, and children everywhere aspired to be like him—even if it meant a lifetime of flatulent embarrassment.
+
+    Yet, Gassy never lost his humility. He continued to live in Flatulentia, quietly experimenting with beans and occasionally saving the world before breakfast. His story became a legend, a tale of courage, creativity, and the realization that even the most unusual talents can change the world.</p>
+
+  </div>
+  <script>
+    // Po kliknięciu gdziekolwiek na stronie włącz dźwięk
+    document.body.addEventListener('click', () => {
+      const video = document.getElementById('gassy');
+      video.muted = false;
+      video.play();
+    }, { once: true }); // działa tylko raz (pierwsze kliknięcie)
+  </script>
+</body>
+</html>

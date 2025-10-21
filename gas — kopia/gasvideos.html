@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gassy</title>
+  <style>
+    /* Allow the page to scroll. Avoid hiding overflow on root elements. */
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh; /* ensure at least full viewport height */
+      /* do not set overflow: hidden here — that prevents scrolling */
+      font-family: sans-serif;
+      color: #dfe8a0;
+    }
+
+    /* Background video stays fixed behind the content */
+    #gassy {
+      position: fixed;
+      inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      pointer-events: none; /* let clicks pass through to page content */
+    }
+
+    /* Content wrapper so text flows normally and can scroll */
+    .content {
+      position: relative;
+      padding: 20px;
+      background: rgba(0,0,0,0.25); /* slight backdrop to improve text readability */
+      box-sizing: border-box;
+    }
+
+    h1, h3, h2 {
+      color: rgb(203, 238, 47);
+      text-align: left;
+      margin: 10px 0;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    a {
+      color: rgb(155, 206, 68);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Film startuje automatycznie wyciszony -->
+  <video id="gassy" autoplay muted loop playsinline>
+    <source src="gassy.mp4" type="video/mp4">
+  </video>
+  <div class="content">
+    <h1>A gassy website</h1>
+    <h3>This website needs a hero!</h3>
+    <nav>
+      <h2><a href="index.html">Main Page</a></h2>
+      <h2><a href="gasstory.html">Story of the incredible gassy</a></h2>
+    </nav>
+<script>
+    // Po kliknięciu gdziekolwiek na stronie włącz dźwięk
+    document.body.addEventListener('click', () => {
+      const video = document.getElementById('gassy');
+      video.muted = false;
+      video.play();
+    }, { once: true }); // działa tylko raz (pierwsze kliknięcie)
+  </script>
+  <h1>The incredible Eryk Gass</h1>
+ <video src="mergeOutput.mov" controls autoplay loop muted poster="GrubaLocha.jpg.png"></video>
+ <h1>The incredible Igor Gassiuk</h1>
+  <video src="06d46781-cc55-4661-8ced-7138188d81e8.mp4" controls autoplay loop muted poster="GrubaLocha.jpg.png"></video>
